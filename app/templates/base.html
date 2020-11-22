@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+    <head>
+        {% block head %}
+            <title>{% block title %}{% endblock title %} — Flask-Bootstrap Demo</title>
+            <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/index.css') }}" />
+            <meta charset="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {% endblock head %}
+    </head>
+
+    <body>
+        <div id="navbar">
+            {% block navbar %}
+            {% endblock %}
+        </div>
+        <div id="content">
+            {% block content %}
+            {% endblock %}
+        </div>
+        <div id="footer">
+            {% block footer %}
+                &copy; Copyright 2020 Stuart Yates
+            {% endblock footer %}
+        </div>
+    </body>
+
+</html>
