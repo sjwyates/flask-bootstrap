@@ -2,8 +2,6 @@
 
 ## Overview
 
-----
-
 This is a starter repo for a simple Flask/Jinja app with Libsass and Bootstrap. It's designed for people new to web development who want to build cleaner, more modern web apps, but don't quite yet have the skills and background to know where to begin. Using it requires a decent understanding of Python, Flask and HTML/CSS.
 
 What does it do for you? A couple things...
