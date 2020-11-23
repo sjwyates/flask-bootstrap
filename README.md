@@ -38,8 +38,6 @@ For instance, you can have a base template with your `<head>` tag and all the bo
 
 And if you're getting data from a database or 3rd-party API that you want to display, you can inject that data straight into your HTML templates. You can even do *for* loops right in the template for making things like lists and table rows. You can also format the data, like for making names title case or formatting date strings.
 
-----
-
 ## Installation
 
 If this all sounds intimidating, it sort of is. However, the hard part's already done for you, so you don't have to know how it all works. Just a few simple steps and you'll be off and running.
