@@ -30,11 +30,13 @@ Here's some background reading on SCSS and customizing Bootstrap:
 
 If you're like me, you hate writing repetitive code, and you *really* hate scrolling `.html` files that are hundreds of lines long. Luckily, Flask comes with the Jinja templating engine built-in:
 
-- [Templating with Jinja](https://jinja.palletsprojects.com/en/2.11.x/templates/)
-
-For instance, you can have a base template with your `<head>` tag and all the boilerplate, then have all your files for your pages just *extend* from it, so all they need to contain is their own content. And if you have components you want to reuse multiple places, you can *include* them in as many places as you want.
+For instance, you can have a base template with your `<head>` tag and all the boilerplate, then have all your files for your pages just *extend* from it, so all they need to contain is their own content. And if you have components you want to reuse multiple places, you can write them once and *include* them in as many places as you want, each time passing them different variables so they know what to display.
 
 And if you're getting data from a database or 3rd-party API that you want to display, you can inject that data straight into your HTML templates. You can even do *for* loops right in the template for making things like lists and table rows. You can also format the data, like for making names title case or formatting date strings.
+
+Further reading:
+
+- [Templating with Jinja](https://jinja.palletsprojects.com/en/2.11.x/templates/)
 
 ## Installation
 
