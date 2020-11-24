@@ -12,31 +12,31 @@ What does it do for you? A couple things...
 
 I'm not exactly a Bootstrap evangelist, but I also cringe when people say it has no place in this world. Sure, you don't see large dev teams using it, but it's great for novice developers making their own small projects who *don't* have a mature UI team behind them.
 
-You also often hear people say that all Bootstrap sites look the same, but that ignores the fact that Bootstrap provides their SCSS source code, with instructions on how to override their defaults. It requires a bit of setup, but here it's already set up for you, so you just have to fill in some blanks.
-
-Here's some background reading on SCSS and customizing Bootstrap:
-
-- [Writing SCSS](https://sass-lang.com/documentation)
-- [Theming Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/theming/)
-
-So all you really need to do is pick your colors and fonts:
+You also often hear people say that all Bootstrap sites look the same, but that ignores the fact that Bootstrap provides their SCSS source code, with instructions on how to override their defaults. It requires a bit of setup, but here it's already set up for you, so you just have to fill in some blanks — eg, pick your colors and fonts:
 
 - [coolors.co](https://coolors.co/)
 - [Google Fonts](https://fonts.google.com/)
 
 And substitute them into the `_variables.css` and `_typography.scss` files. For instance, if you don't really like how Bootstrap's `primary` buttons look, you can just plug in your own hex code, and now anytime you use `btn-primary` or `bg-primary`, it'll be your color — no custom CSS required. 
 
+Here's some background reading on SCSS and customizing Bootstrap:
+
+- [Writing SCSS](https://sass-lang.com/documentation)
+- [Theming Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/theming/)
+
 ----
 
 ### Jinja Templating:
 
-If you're like me, you hate writing repetitive code, and you *really* hate scrolling `.html` files that are hundres of lines long. Luckily, Flask comes with the Jinja templating engine built-in:
+If you're like me, you hate writing repetitive code, and you *really* hate scrolling `.html` files that are hundreds of lines long. Luckily, Flask comes with the Jinja templating engine built-in.
 
-- [Templating with Jinja](https://jinja.palletsprojects.com/en/2.11.x/templates/)
-
-For instance, you can have a base template with your `<head>` tag and all the boilerplate, then have all your files for your pages just *extend* from it, so all they need to contain is their own content. And if you have components you want to reuse multiple places, you can *include* them in as many places as you want.
+For instance, you can have a base template with your `<head>` tag and all the boilerplate, then have all your files for your pages just *extend* from it, so all they need to contain is their own content. And if you have components you want to reuse multiple places, you can write them once and *include* them in as many places as you want, each time passing them different variables so they know what to display.
 
 And if you're getting data from a database or 3rd-party API that you want to display, you can inject that data straight into your HTML templates. You can even do *for* loops right in the template for making things like lists and table rows. You can also format the data, like for making names title case or formatting date strings.
+
+Further reading:
+
+- [Templating with Jinja](https://jinja.palletsprojects.com/en/2.11.x/templates/)
 
 ## Installation
 
