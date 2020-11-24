@@ -1,7 +1,12 @@
 $theme-colors: (
-  "primary": #AE8CA3,
-  "info": #95D9DA
+  "primary": #58A4B0,
+  "info": #bdd1e6,
+  "danger": #DAA49A,
+  "light": #D8DBE2,
+  "dark": #373F51
 );
+
+$enable-gradients: true;
 
 // Bootstrap's base color variables:
 

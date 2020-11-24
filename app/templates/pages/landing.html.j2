@@ -1,0 +1,9 @@
+{% extends "base.html.j2" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    {% with headline="Frontend Demo", lead="Making fun pages in Flask/Bootstrap" %}
+      {% include "components/jumbo.html.j2" %}
+    {% endwith %}
+{% endblock %}
